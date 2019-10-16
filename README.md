@@ -1,7 +1,3 @@
----
-title: AppImage creation made easy
----
-
 # AppImage Crafters Docs
 
 You wil find here tips and tricks on how to use the AppImageCreafters docker-images to produce high quality AppImages.
