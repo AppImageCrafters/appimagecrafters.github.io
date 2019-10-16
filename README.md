@@ -28,7 +28,7 @@ To __create the `AppDir`__ the app install script must be configured to use `/us
 
 To __generate the `AppImage`__ the `linuxdeploy` tool will be used. It receives as paramether the path to the `AppDir` and the plugins to be enabled. So to produce an AppImage the corresponding plugin must be used as follows:
 
-`linuxdeploy --appdir=path/to/AppDir --output appimage`
+```linuxdeploy --appdir=path/to/AppDir --output appimage```
 
 ### Packing C++ Application
 
@@ -44,6 +44,6 @@ pushd appimagecraft-build-release
 popd
 ```
 and from your source dir call:
-`docker run -v $PWD:/source -w /source appimagecrafters/docker-linuxdeploy bash ./appimage-build.sh`
+```docker run -v $PWD:/source -w /source appimagecrafters/docker-linuxdeploy bash ./appimage-build.sh```
 
 a nice AppImage file should be found in the `appimagecraft-build-release` folder with the name you gave it on the `Desktop Entry` file.
