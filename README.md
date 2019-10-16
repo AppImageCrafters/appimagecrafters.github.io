@@ -6,7 +6,11 @@ You wil find here tips and tricks on how to use the AppImageCreafters docker-ima
 
 The process of producing an AppImage file starts by creating a relocatable and totally standalone installation of your binaries. Then it's compressed into a squashfs file and appended to a runtime. While it's possible to do it by hand this is not a trivial task therefore several tools where created to make your life easier.
 
-This page complements the [AppImage Project Documentation](https://docs.appimage.org/) with build examples based on the docker images maintained by the AppImageCrafters group. If __you are an AppImage creator__ and have had a hard time building some dependency of your app, please consider uploading it to the collection so others can benefit from it. If __you are creating an Appimage__ for the __first time__, we have growing collection of tested recipes for you to use.
+This page complements the [AppImage Project Documentation](https://docs.appimage.org/) with build examples based on the docker images maintained by the AppImageCrafters group.
+
+If __you are an AppImage creator__ and have had a hard time building some dependency of your app, please consider uploading it to [the collection](https://github.com/appimagecrafters) so others can benefit from it.
+
+If __you are creating an Appimage__ for the __first time__, we have growing collection of tested recipes for you to use. Check them out at [docker hub](https://cloud.docker.com/u/appimagecrafters/)
 
 ## The AppImage build environment
 
