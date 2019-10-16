@@ -84,3 +84,43 @@ docker run -v $PWD:/source -w /source appimagecrafters/docker-linuxdeploy-qt bas
 a nice AppImage file should be found in the `appimagecraft-build-release` folder with the name you gave it on the `Desktop Entry` file.
 
 __A full working example can be found [here](https://www.opencode.net/azubieta/qt-appimage-template)__
+
+
+### Packing Electron Application
+
+Creating an AppImage from an ElectronJs application is extremly simple as it's supported by the [`electron-builder` extension](https://www.electron.build/configuration/appimage). Here is a simplified `package.json` file with the modifications required to generate AppImages. Notice that a new script was created for calling `electron-builder` and a build configuration for linux was also created.
+
+```
+{
+  ...
+  "scripts": {
+    ...
+    "dist": "electron-builder build --linux AppImage"
+  }
+  ...
+  "build": {
+    ...
+    "linux": {
+      "desktop": {
+        "Name": "Electron AppImage Template",
+        "Comment": "Simple application for AppImage build demostration purposes",
+        "Categories": "Utility"
+      }
+    }
+  }
+}  
+```
+
+Feel free to properly fill the "Name", "Comment" and "Categories" fields. Now from your source dir call:
+
+```
+docker run -v $PWD:/source -w /source electronuserland/builder:wine bash -c "npm install && npm run dist"
+```
+
+a nice AppImage file should be found in the `dist` folder with the name you gave it on the `package.json` file.
+
+Notice that a third party docker image is being used instead of the appimagecarfters ones. In this case it wasn't necesary to create a new one as the existent works well.
+
+__A full working example can be found [here](https://www.opencode.net/azubieta/electron-appimage-template/)__
+
+
