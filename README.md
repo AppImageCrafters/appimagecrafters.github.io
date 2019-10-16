@@ -40,7 +40,7 @@ Creating an AppImage from a C++ application is simple. Just create an `appimage-
 
 mkdir -p appimagecraft-build-release
 pushd appimagecraft-build-release
-  cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr .
+  cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr ..
   DESTDIR=AppDir make install
   linuxdeploy --appdir=AppDir --output appimage
 popd
@@ -50,6 +50,31 @@ and from your source dir call:
 
 ```
 docker run -v $PWD:/source -w /source appimagecrafters/docker-linuxdeploy bash ./appimage-build.sh
+```
+
+a nice AppImage file should be found in the `appimagecraft-build-release` folder with the name you gave it on the `Desktop Entry` file.
+
+__A full working example can be found [here](https://www.opencode.net/azubieta/cpp-appimage-template)__
+
+### Packing Qt/Qml Application
+
+Creating an AppImage from a C++ application is simple. Just create an `appimage-build.sh` script with the follwing content in your project root dir:
+```
+#!/bin/bash
+
+mkdir -p appimagecraft-build-release
+pushd appimagecraft-build-release
+  cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr ..
+  DESTDIR=AppDir make install
+  export QML_SOURCES_PATHS=$PWD/.. # point to the directory where you qml files are
+  linuxdeploy --appdir=AppDir --plugin qt --output appimage
+popd
+```
+
+and from your source dir call:
+
+```
+docker run -v $PWD:/source -w /source appimagecrafters/docker-linuxdeploy-qt bash ./appimage-build.sh
 ```
 
 a nice AppImage file should be found in the `appimagecraft-build-release` folder with the name you gave it on the `Desktop Entry` file.
