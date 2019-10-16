@@ -22,7 +22,7 @@ In this build environment is possible thanks to the [Red Hat Developer Toolset](
 
 AppImages are meant to pack desktop applications, therefore is mandatory to provide a valid [`Desktop Entry`](https://standards.freedesktop.org/desktop-entry-spec/latest/) and [`icon`](https://specifications.freedesktop.org/icon-theme-spec/icon-theme-spec-latest.html). Additionally it's recommended to include an [`AppStream file`](https://www.freedesktop.org/software/appstream/docs/index.html) to properly document your bundle.
 
-About the __copyrights__, while the tools do their best to include the dependencies copyrights it's your sole resposibility to make shore that all of them are fulfilled properly. To do so you can copy them into the `AppDir` before creating the AppImage bundle.
+About the __copyrights__, while the tools do their best to include the dependencies copyrights it's your sole resposibility to make shure that all of them are fulfilled properly. To do so you can copy them into the `AppDir` before creating the AppImage bundle.
 
 To __create the `AppDir`__ the app install script must be configured to use `/usr` as prefix. The you must call install into a folder named `AppDir`. _The folder is named that way by convention, you can use the one you like._
 
