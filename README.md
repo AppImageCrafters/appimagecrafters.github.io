@@ -47,3 +47,5 @@ and from your source dir call:
 ```docker run -v $PWD:/source -w /source appimagecrafters/docker-linuxdeploy bash ./appimage-build.sh```
 
 a nice AppImage file should be found in the `appimagecraft-build-release` folder with the name you gave it on the `Desktop Entry` file.
+
+__A full working example can be found [here](https://appimagecrafters.github.io/#packing-c-application)__
