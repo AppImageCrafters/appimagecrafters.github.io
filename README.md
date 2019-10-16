@@ -48,4 +48,4 @@ and from your source dir call:
 
 a nice AppImage file should be found in the `appimagecraft-build-release` folder with the name you gave it on the `Desktop Entry` file.
 
-__A full working example can be found [here](https://appimagecrafters.github.io/#packing-c-application)__
+__A full working example can be found [here](https://www.opencode.net/azubieta/cpp-appimage-template)__
