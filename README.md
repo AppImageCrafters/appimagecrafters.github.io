@@ -24,7 +24,7 @@ AppImages are meant to pack desktop applications, therefore is mandatory to prov
 
 About the __copyrights__, while the tools do their best to include the dependencies copyrights it's your sole resposibility to make shure that all of them are fulfilled properly. To do so you can copy them into the `AppDir` before creating the AppImage bundle.
 
-To __create the `AppDir`__ the app install script must be configured to use `/usr` as prefix. The you must call install into a folder named `AppDir`. _The folder is named that way by convention, you can use the one you like._
+To __create the `AppDir`__ the app install script must be configured to use `/usr` as prefix. Then you must call install into a folder named `AppDir`. _The folder is named that way by convention, you can use the one you like._
 
 To __generate the `AppImage`__ the `linuxdeploy` tool will be used. It receives as paramether the path to the `AppDir` and the plugins to be enabled. So to produce an AppImage the corresponding plugin must be used as follows:
 
