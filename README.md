@@ -2,7 +2,7 @@
 
 You wil find here tips and tricks on how to use the AppImageCreafters docker-images to produce high quality AppImages.
 
-## Introducction
+## Introduction
 
 The process of producing an AppImage file starts by creating a relocatable and totally standalone installation of your binaries. Then it's compressed into a squashfs file and appended to a runtime. While it's possible to do it by hand this is not a trivial task therefore several tools where created to make your life easier.
 
