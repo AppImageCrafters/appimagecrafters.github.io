@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to AppImage Crafters!"
 date:   2020-07-29 15:04:50 -0500
-categories: AppImage 
+categories: AppImage
 ---
 
 Every large GNU/Linux distribution has its way of packaging applications. With every release some packages change their names, some are added, and some others are deleted. For an application developer, this is a nightmare as they must target not one but several moving targets.
@@ -26,9 +26,7 @@ We believe that *users* should be able to:
 - install it without the need for installing a package manager
 - keep the application version they love forever*
 
-## Goals
-
 We aim to:
 - Educate developers on creating packages for GNU/Linux using the AppImage format
 - Develop tools to ease the creation process and user experience
-
+ 
