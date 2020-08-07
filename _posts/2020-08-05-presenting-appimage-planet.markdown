@@ -6,7 +6,7 @@ categories: AppImage
 ---
 
 The AppImage world is bast and mysterious, therefore a map is required to ease
-navigation. Tha map is the RSS aggregator [AppImage Planet](https://appimage.gitlab.io/planet/).
+navigation. That map is the RSS aggregator [AppImage Planet](https://appimage.gitlab.io/planet/).
 
 There you will be able to find all the people and projects that gravitates around
 the AppImage core project.  Let's take a look to the more significant project.
