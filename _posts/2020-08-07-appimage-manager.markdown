@@ -3,6 +3,7 @@ layout: post
 title:  "Introducing appimage-manager"
 date:   2020-08-07 00:00:00 -0500
 categories: AppImage
+comments: true
 ---
 
 `appimage-manager` is a tool for managing your AppImage collection. It works quite similar to a traditional package

@@ -3,6 +3,7 @@ layout: post
 title:  "Welcome to AppImage Crafters!"
 date:   2020-07-29 15:04:50 -0500
 categories: AppImage
+comments: true
 ---
 
 Every large GNU/Linux distribution has its way of packaging applications. With every release some packages change their names, some are added, and some others are deleted. For an application developer, this is a nightmare as they must target not one but several moving targets.

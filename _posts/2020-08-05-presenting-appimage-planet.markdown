@@ -3,6 +3,7 @@ layout: post
 title:  "Presenting AppImage Planet"
 date:   2020-08-05 00:00:00 -0500
 categories: AppImage
+comments: true
 ---
 
 The AppImage world is bast and mysterious, therefore a map is required to ease
